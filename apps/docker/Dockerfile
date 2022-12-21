@@ -19,7 +19,7 @@ LABEL description="AC base image for dev containers"
 ENV DOCKER=1
 
 # set timezone environment variable
-ENV TZ=Etc/UTC
+ENV TZ=Asia/Shanghai
 
 # set noninteractive mode so tzdata doesn't ask to set timezone on install
 ENV DEBIAN_FRONTEND=noninteractive
@@ -111,7 +111,7 @@ LABEL description="AC service image for server applications"
 # List of timezones: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # set timezone environment variable
-ENV TZ=Etc/UTC
+ENV TZ=Asia/Shanghai
 
 # set noninteractive mode so tzdata doesn't ask to set timezone on install
 ENV DEBIAN_FRONTEND=noninteractive
@@ -269,7 +269,7 @@ LABEL description="AC Production: client-data"
 RUN apt-get update && apt-get install -y tzdata curl unzip && rm -rf /var/lib/apt/lists/* ;
 
 # set timezone environment variable
-ENV TZ=Etc/UTC
+ENV TZ=Asia/Shanghai
 
 # set noninteractive mode so tzdata doesn't ask to set timezone on install
 ENV DEBIAN_FRONTEND=noninteractive
@@ -306,7 +306,7 @@ LABEL description="AC Production: tools"
 # List of timezones: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # set timezone environment variable
-ENV TZ=Etc/UTC
+ENV TZ=Asia/Shanghai
 
 # set noninteractive mode so tzdata doesn't ask to set timezone on install
 ENV DEBIAN_FRONTEND=noninteractive
