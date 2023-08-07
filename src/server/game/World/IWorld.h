@@ -79,6 +79,7 @@ enum WorldBoolConfigs
     CONFIG_ALLOW_TWO_SIDE_INTERACTION_CHANNEL,
     CONFIG_ALLOW_TWO_SIDE_INTERACTION_GROUP,
     CONFIG_ALLOW_TWO_SIDE_INTERACTION_GUILD,
+    CONFIG_ALLOW_TWO_SIDE_INTERACTION_ARENA,
     CONFIG_ALLOW_TWO_SIDE_INTERACTION_AUCTION,
     CONFIG_ALLOW_TWO_SIDE_INTERACTION_MAIL,
     CONFIG_ALLOW_TWO_SIDE_WHO_LIST,
@@ -597,7 +598,6 @@ public:
     [[nodiscard]] virtual LocaleConstant GetAvailableDbcLocale(LocaleConstant locale) const = 0;
     virtual void LoadDBVersion() = 0;
     [[nodiscard]] virtual char const* GetDBVersion() const = 0;
-    virtual void LoadMotd() = 0;
     virtual void UpdateAreaDependentAuras() = 0;
     [[nodiscard]] virtual uint32 GetCleaningFlags() const = 0;
     virtual void   SetCleaningFlags(uint32 flags) = 0;
